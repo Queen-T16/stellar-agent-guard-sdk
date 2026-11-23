@@ -19,6 +19,7 @@
   * [Policy JSON](api/policy-json.md)
   * [Policy Schema Validation](api/policy-schema.md)
 * [Running an Agent 24/7](agent-runtime.md)
+* [Admin Incident Runbook](admin-incident-runbook.md)
 * [Production Readiness Checklist](production-readiness.md)
 * [Architecture](architecture.md)
 * [Event Schema](event-schema.md)
