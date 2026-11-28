@@ -4,28 +4,30 @@
   "entry": "scripts/bundle-size-entry.ts",
   "tool": "esbuild (devDependency, already in the tree via tsx) — bundle, minify, format=esm",
   "baseline": {
-    "sourceCommit": "18a6ba64d797e2f99a3726913213f9e6372724f0",
-    "measuredAt": "2026-09-30T00:00:00.000Z",
-    "rawBytes": 874886,
-    "gzipBytes": 198288
+    "sourceCommit": "2354be601332bdaba16c5a25a1332f737d341a1f",
+    "measuredAt": "2026-11-28T13:19:41.000Z",
+    "rawBytes": 962953,
+    "gzipBytes": 222502
   },
   "budget": {
-    "rawBytes": 962374,
-    "gzipBytes": 228031
+    "rawBytes": 1059248,
+    "gzipBytes": 255877
   },
   "shapes": {
     "dashboard": {
       "name": "dashboard import",
       "entry": "scripts/bundle-size-entry.ts",
       "platform": "browser",
-      "rationale": "Stable dashboard-shaped client import with named exports used by the operator console.",
+      "rationale": "Stable dashboard-shaped client import with named exports used by the operator console. Re-baselined after #470 RPC URL validation added 1,011 raw bytes and 404 gzip bytes; the guard prevents plaintext remote RPC from exposing bearer credentials. Measured 2026-11-28: 962,953 raw / 222,502 gzip.",
       "baseline": {
-        "rawBytes": 874886,
-        "gzipBytes": 198288
+        "sourceCommit": "2354be601332bdaba16c5a25a1332f737d341a1f",
+        "measuredAt": "2026-11-28T13:19:41.000Z",
+        "rawBytes": 962953,
+        "gzipBytes": 222502
       },
       "budget": {
-        "rawBytes": 962374,
-        "gzipBytes": 228031
+        "rawBytes": 1059248,
+        "gzipBytes": 255877
       }
     },
     "root-full": {
